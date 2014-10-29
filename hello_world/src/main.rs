@@ -69,8 +69,9 @@ fn main() {
 	println!("x, y = {}, {}", x, y);
 	
 	// (fig 3) Set struct 
-	let origin = PointInSpace { x: 0i, y: 0i };
-	println!("The origin is at ({}, {})", origin.x, origin.y);
+	let mut point = PointInSpace { x: 0i, y: 0i };
+	point.x = 5;
+	println!("The origin is at ({}, {})", point.x, point.y);
 
 }
 
